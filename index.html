@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1419" />
+  <title>Natalia — Aventura 3 Niveles</title>
+  <meta name="description" content="Natalia: Una aventura de 3 Niveles" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎮</span>
+        <span class="title">Natalia — 8-bit Edition</span>
+      </div>
+      <!-- nav scrollable en mobile -->
+      <nav class="nav nav-scroll" aria-label="Navegación principal">
+        <a href="#niveles">Niveles</a>
+        <a href="https://github.com/AaronSoria/Natalia-the-Game/releases/download/v1.0.1/NataliaTheGame.zip">Descargas</a>
+        <a href="#controles">Controles</a>
+        <a href="#creditos">Créditos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-media">
+          <!-- lazy + tamaño flexible -->
+          <img src="assets/cover.png" alt="Portada del juego Natalia 8-bit Edition" loading="lazy" />
+          <div class="badge">Aventura 3 Niveles</div>
+        </div>
+        <div class="hero-copy">
+          <h1><span class="pix">NATALIA</span><br/><small>8-bit Edition</small></h1>
+          <p class="lead">
+            Corre, come pellets y ¡vence al jefe! Un regalo de cumpleaños y homenaje retro en <strong>Pygame</strong>:
+            <em>Runner</em> tipo Dino, <em>Pac-Man</em> con perros salchicha y
+            combate top-down.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://github.com/AaronSoria/Natalia-the-Game/releases/download/v1.0.1/NataliaTheGame.zip">Descargar</a>
+            <a class="btn ghost" href="#niveles">Ver niveles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="niveles" class="section">
+      <div class="container">
+        <h2>Niveles</h2>
+        <div class="grid three">
+          <article class="card">
+                        <picture>
+              <img src="assets/level1.png" alt="Nivel 1 — Runner tipo Dino esquivando obstáculos"
+                loading="lazy" width="800" height="450">
+            </picture>
+            <h3>1) Runner tipo Dino</h3>
+            <p>Salta y doble salto para esquivar cactus y aves. Sobrevive el tiempo objetivo.</p>
+          </article>
+
+          <article class="card">
+                          <img src="assets/level2.png" alt="Nivel 2 — Laberinto estilo Pac-Man con perros salchicha"
+                loading="lazy" width="800" height="450">
+            <h3>2) Laberinto</h3>
+            <p>Recolecta todos los pellets mientras evitas a los perros salchicha. Con power-ups se asustan.</p>
+          </article>
+
+          <article class="card">
+                          <img src="assets/level3.png" alt="Nivel 3 — Boss Fight en arena top-down" loading="lazy"
+                width="800" height="450">
+            <h3>3) Boss Fight</h3>
+            <p>Arena top-down con disparos, dash y jefe con patrones radiales. Animaciones para jugador y boss.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="controles" class="section">
+      <div class="container">
+        <h2>Controles</h2>
+        <div class="grid two">
+          <div class="kbd card">
+            <h3>Runner</h3>
+            <ul>
+              <li><kbd>Espacio</kbd> / <kbd>W</kbd> / <kbd>↑</kbd> — Saltar / doble salto</li>
+              <li><kbd>R</kbd> — Reiniciar</li>
+            </ul>
+          </div>
+          <div class="kbd card">
+            <h3>Laberinto &amp; Boss</h3>
+            <ul>
+              <li><kbd>WASD</kbd> / Flechas — Mover</li>
+              <li><kbd>Espacio</kbd> — Disparar</li>
+              <li><kbd>Shift</kbd> — Dash (arena)</li>
+              <li><kbd>P</kbd> — Pausa</li>
+              <li><kbd>N</kbd> — Siguiente nivel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creditos" class="section alt">
+      <div class="container">
+        <h2>Créditos</h2>
+        <ul class="credits">
+          <li>Programación: Aaron Soria</li>
+          <li>Motor: <a href="https://www.pygame.org/" target="_blank" rel="noreferrer">Pygame</a></li>
+          <li>Inspirado en la portada del videojuego: <a href="https://store.steampowered.com/app/504230/Celeste/?l=spanish678  aq" target="_blank" rel="noreferrer">Celeste</a></li>
+        </ul>
+        <p class="small">Proyecto de regalo de cumpleaños para Natalia. ¡Feliz cumpleaños! 🎂</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Natalia — 8-bit Edition</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
